@@ -1,0 +1,42 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: 'Courier';
+    animation: changeColor 8s infinite;
+    font-size: 12pt;
+    line-height: 10pt;
+    overflow: hidden;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  @keyframes changeColor {
+    0%{
+        color: #0095f6;
+    }
+    50%{
+        color: #00ab55;
+    }
+    100%{
+        color: #0095f6;
+    }
+  }
+  div{
+    width: fit-content;
+    border: 2px solid #252524;
+    border-radius: 8px;
+    padding: 2px;
+    translate: 0px 5px;
+    transform: rotateY(180deg);
+  }
+  canvas {
+    display: block;
+    margin: auto;
+}
+  video{
+    position: fixed;
+    visibility: hidden;
+  }
